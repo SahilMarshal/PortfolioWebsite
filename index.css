@@ -1,0 +1,277 @@
+:root{
+	--gree:#64ffda;
+	--whi:#ccd6f6;
+	--gre:#8892b0;
+}
+body{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	background-color: #0a192f;
+}
+
+/*its home section*/
+.home{
+	height: 80vh;
+}
+
+/*its navigation bar contains name and navbar*/
+.nav{
+	display: flex;
+	position: fixed;
+	overflow: hidden;
+	z-index: 1;
+	top: 0px;
+	height: 100px;
+	align-items: center ;
+	background-color: rgba(10, 25, 47, 0.85);;
+}
+.nav h1{
+	margin-left: 1.563rem;
+	font-size: 1.875rem;
+	color: var(--gree);
+}
+.nav ul{
+	display: flex;
+	list-style: none;
+	margin-left: 37.5rem;
+	font-size: 1.563rem;
+}
+.nav li{
+	margin: 0.625rem;
+	padding: 0.625rem;
+}
+.nav li a{
+	color: var(--whi);
+	text-decoration: none;
+}
+.nav li a:hover{
+	cursor: pointer;
+	color: var(--gree);
+}
+.navbar li{
+	color: darkred;
+}
+
+/*This is infocontainer named div*/
+.infocontainer{
+	width: 80%;
+	margin: 12.5rem auto;
+	text-align: center;
+}
+
+/*hi i am*/
+.hi{
+	font-size: 1.875rem;
+	color: var(--gree);
+}
+.name{
+	text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    color: var(--whi);
+    font-weight: 800;
+	font-size: 3.75rem;
+}
+.tag{
+	font-size: 3.188rem;
+	color: var(--gre);
+}
+.info{
+	color: var(--gre);
+    text-align: center;
+    width: 100%;
+    line-height: 1.6;
+	font-size: 1.875rem;
+}
+
+/*contact Button*/
+.conbut{
+	background-color: #0a192f;
+	width: 8.75rem;
+	height: 2.5rem;
+	border: 2px solid #64ffda;
+	border-radius: 20px ;
+}
+.conbut a{
+	font-size: 0.938rem;
+	font-weight: bolder;
+	color: var(--gree);
+	letter-spacing: 1.5px;
+	text-decoration: none;
+}
+.conbut:hover{
+	background-color: var(--gree);
+	border-color: #0a192f;
+}
+.conbut a:hover{
+	color: #0a192f;
+}
+
+/*Section About me*/
+.aboutme{
+	height: 190vh;
+	background-color: #0a192f;	
+}
+
+/*content div contains paragraph*/
+.content{
+	width: 70%;
+	margin: 3.125rem auto;
+	color: var(--gre);
+}
+
+/*Paragraph contains information about me*/
+p{
+	margin: 0px;
+	padding: 0.625rem;
+	width: 57.5rem;
+	font-size: 1.438rem;
+}
+
+/*eliptical shape*/
+.cir{
+	shape-outside: ellipse(120px 200px at 40% 50%);
+	shape-margin: 14px;
+	clip-path: ellipse(120px 200px at 40% 50%);
+     width: 18.75rem;
+     height: 31.25rem;
+     float: left;
+     box-shadow: 2px red;
+}
+.cir img{
+	height: 28.125rem;
+	width: 18.75rem;
+	filter: grayscale(100%);
+}
+.cir img:hover{
+	transition: 0.4s ease-in-out;
+	filter: grayscale(0%);
+	height: 31.25rem;
+	width: 21.875rem;
+	border: 1px solid white;
+}
+.parahighlights{
+	color: var(--gree);
+}
+.paracenter{
+	text-align: center;
+	letter-spacing: 0.5px;
+}
+
+/*its skilltable*/
+.tableref{
+	margin: 8.125rem;
+}
+.tab{
+		border-collapse: collapse;
+		margin: auto;
+		width: 56.25rem;
+		height: 12.5rem;
+		font-size: 0.9em;
+		min-width: 25rem;
+		text-align: center;
+		font-weight: bold;
+		border-radius: 20px;
+		overflow: hidden;
+		box-shadow: 0 0 20px ;
+	}
+	.tab thead tr{
+		border-bottom: 1px solid lightgrey;
+	}
+	.tab thead tr:nth-of-type(even){
+		background-color: #f3f3f3;
+	}
+	.tab thead tr:nth-of-type(odd){
+		background-color: #009879;
+		color: white;
+	}
+	.tab thead td:first-of-type{
+		background-color: #ccd6f6;
+		background-color: gray;
+		color: #0a192f;
+		color: white;
+	}
+	.headingaboutme{
+	color: white;
+	width: 70%;
+	margin: 3.125rem auto;
+	font-size: 1.875rem;
+	color: var(--whi);
+	}
+	.headingaboutme:after{
+	content: "";
+	position: absolute;
+    height: 1px;
+    top: 128%;
+    background-color: white;
+    width: 60%;
+    margin-left: 0.938rem;       
+	}
+
+/*for contact section */
+.contact{
+	color: white;
+	height: 95vh;
+}	
+.contactdiv{
+	width: 70%;
+	margin:  5.625rem auto;
+	text-align: center;
+	height: 50vh;
+}
+
+#next{
+	color: var(--gree);
+	letter-spacing: 1.5px;
+}
+#touch{
+	color: var(--whi);
+	font-size: 3.438rem;
+	letter-spacing: 1.5px;
+}
+
+#looking{
+	color: var(--gre);
+	font-size: 1.563rem;
+}
+.conpara{
+	width: 60%;
+	margin: auto;
+	text-align: center;
+	padding-bottom: 1.563rem;
+}
+.sign{
+	font-size: 1.25rem;
+	color: var(--gre);
+	letter-spacing: 2px;
+	width: 60%;
+	margin: 7.188rem auto;
+	text-align: center;
+}
+
+/*contact me Button*/
+.conbutme{
+	background-color: #0a192f;
+	width: 8.75rem;
+	height: 2.5rem;
+	border: 2px solid var(--gree);
+	border-radius: 20px;
+}
+.conbutme a{
+	font-size: 0.938rem;
+	font-weight: bolder;
+	color: var(--gree);
+	letter-spacing: 1.5px;
+	text-decoration: none;
+}
+.conbutme:hover{
+	background-color: var(--gree);
+	border-color: #0a192f;
+}
+.conbutme a:hover{
+	color: #0a192f;
+}
+.conmebut{
+	margin-top: 1.563rem;
+}
